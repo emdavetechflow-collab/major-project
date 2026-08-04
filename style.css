@@ -107,7 +107,7 @@ nav {
 .about-me_picture {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+}
 
   /* improving my picture quality */
   transform: scale(1.1);
