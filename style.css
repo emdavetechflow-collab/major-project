@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 
+/* RESET */
 * {
   font-family: "Lato", sans-serif;
   padding: 0;
@@ -8,7 +9,12 @@
 }
 
 /* HEADINGS */
-h1, h2, h3, h4, h5, h6 span {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 span {
   color: #242424;
   line-height: 1.5;
   text-align: center;
@@ -76,6 +82,7 @@ nav {
   margin-top: 40px;
 }
 
+/* PROFILE PICTURE */
 .about-me_picture--mask {
   width: 140px;
   height: 140px;
@@ -92,6 +99,7 @@ nav {
   transform: scale(1.1);
 }
 
+/* TEXT */
 .about-me_info--title {
   margin-bottom: 16px;
 }
@@ -101,6 +109,7 @@ nav {
   margin-bottom: 28px;
 }
 
+/* SOCIAL ICONS */
 .about-me_links a {
   text-decoration: none;
   color: #6030b1;
