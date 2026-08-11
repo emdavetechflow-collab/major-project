@@ -9,6 +9,9 @@
 }
 
 /* HEADINGS */
+html {
+  scroll-behavior: smooth;
+}
 h1,
 h2,
 h3,
@@ -290,23 +293,186 @@ a:hover,
   cursor: pointer;
 }
 
-/* footer */
+/* FOOTER */
 footer {
   background-color: #242424;
+  padding: 40px 0 20px;
+  color: #fff;
+  text-align: center;
 }
 
+/* Scroll to Top Button */
+.footer_logo--popper {
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: all 300ms ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 15px;
+}
+
+.footer_logo--popper:hover {
+  opacity: 1;
+  transform: translateY(-4px);
+}
+
+/* Footer Row */
 .footer__row {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 8% 0;
+  gap: 20px;
 }
 
-footer__logo--img {
-  width: 70px;
-  height: 70px;
+/* Logo */
+.footer__logo--img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-.footer_social--link .footer__copyright {
+/* Footer Links */
+.footer_social--list {
+  display: flex;
+  gap: 30px;
+}
+
+.footer_social--link {
   color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: opacity 300ms ease;
+}
+
+.footer_social--link:hover {
+  opacity: 0.7;
+}
+
+/* Copyright */
+.footer__copyright {
+  color: #fff;
+  font-size: 14px;
+  opacity: 0.8;
+  margin-top: 15px;
+}
+
+/* ===========================
+   TABLETS & LARGE PHONES
+   (max-width: 768px)
+   =========================== */
+@media (max-width: 768px) {
+  /* NAV */
+  nav {
+    padding: 16px 24px;
+  }
+  .nav_links--list {
+    gap: 16px;
+  }
+
+  /* HEADINGS */
+  h1 {
+    font-size: 26px;
+  }
+  .about-me_info--para {
+    font-size: 18px;
+  }
+
+  /* ABOUT IMAGE */
+  .about-me_img {
+    width: 240px;
+  }
+
+  /* TECH STACK */
+  .language {
+    width: 33.33%; /* 3 per row */
+  }
+  .language_img {
+    max-width: 80px;
+  }
+
+  /* PROJECTS */
+  .project_wrapper {
+    width: 300px;
+    height: 210px;
+  }
+
+  /* FOOTER */
+  .footer_social--list {
+    gap: 20px;
+  }
+  .footer__logo--img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* ===========================
+   SMALL PHONES
+   (max-width: 480px)
+   =========================== */
+@media (max-width: 480px) {
+  /* NAV */
+  nav {
+    padding: 14px 16px;
+  }
+  .personal_logo {
+    font-size: 22px;
+  }
+  .nav_links--list {
+    gap: 12px;
+  }
+
+  /* ABOUT SECTION */
+  .about-me_picture--mask {
+    width: 110px;
+    height: 110px;
+  }
+  .about-me_img {
+    width: 200px;
+  }
+  .about-me_info--title {
+    font-size: 22px;
+  }
+  .about-me_info--para {
+    font-size: 16px;
+  }
+
+  /* TECH STACK */
+  .language {
+    width: 50%; /* 2 per row */
+  }
+  .language_img {
+    max-width: 70px;
+  }
+
+  /* PROJECTS */
+  .projects_list {
+    gap: 24px;
+  }
+  .project_wrapper {
+    width: 260px;
+    height: 190px;
+  }
+  .project_description--title {
+    font-size: 14px;
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 30px 0 15px;
+  }
+  .footer_social--list {
+    gap: 16px;
+  }
+  .footer__logo--img {
+    width: 45px;
+    height: 45px;
+  }
+  .footer__copyright {
+    font-size: 12px;
+  }
 }
